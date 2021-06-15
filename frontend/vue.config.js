@@ -12,4 +12,9 @@ module.exports = {
       ? "../app/Views/index.php"
       : "index.html",
   outputDir: "../public/",
+  pwa: {
+    workboxOptions: {
+      exclude: [".htaccess"],
+    },
+  },
 };
